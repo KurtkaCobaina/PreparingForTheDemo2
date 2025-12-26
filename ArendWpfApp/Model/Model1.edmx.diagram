@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0211b26510ac4ee2a889721665ca7cfc" Name="Diagram1">
+        <EntityTypeShape EntityType="ArendaModel.Arenda" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.Class" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.Client" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.ClientSkidka" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.Cvet" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.Marka" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.Model" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.Polzovateli" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.Rol" Width="1.5" PointX="5.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.Skidka" Width="1.5" PointX="3" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.StatusZayavki" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.TipBenzina" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.TipKPP" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.TipKuzova" Width="1.5" PointX="0.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArendaModel.TransportnoeSredstvo" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="ArendaModel.FK_Arenda_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_Arenda_Polzovateli" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_Arenda_StatusZayavki" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_Arenda_TransportnoeSredstvo" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_ClientSkidka_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_ClientSkidka_Skidka" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_TransportnoeSredstvo_Marka" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_TransportnoeSredstvo_Model" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_TransportnoeSredstvo_TipBenzina" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_TransportnoeSredstvo_TipKPP" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.FK_TransportnoeSredstvo_TipKuzova" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.TSClass" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.TSCvet" ManuallyRouted="false" />
+        <AssociationConnector Association="ArendaModel.PolzovateliRoli" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

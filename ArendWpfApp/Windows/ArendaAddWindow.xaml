@@ -1,0 +1,44 @@
+﻿<Window x:Class="ArendWpfApp.ArendaAddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArendWpfApp"
+        mc:Ignorable="d"
+        Title="ArendaAddWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="StackPanel">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer  Grid.Column="0">
+        <StackPanel>
+            <Label FontSize="24" Content="Добавление аренда"/>
+            <Label Content="Ид клиента"/>
+            <TextBox Text="{Binding IdClienta}"/>
+            <Label Content="Ид транспортного средства"/>
+            <TextBox Text="{Binding IdTs}"/>
+            <Label Content="Дата взятия"/>
+            <TextBox Text="{Binding DataVzyatie}"/>
+            <Label Content="Срок аренды"/>
+            <TextBox Text="{Binding SrokArenda}"/>
+            <Label Content="Ид статуса"/>
+            <TextBox Text="{Binding IdStatus}"/>
+            <Label Content="Коментарии"/>
+            <TextBox Text="{Binding Komentarii}"/>
+            <Label Content="Ид пользователя"/>
+            <TextBox Text="{Binding IdPolzovatelya}"/>
+        </StackPanel>
+        </ScrollViewer>
+        <StackPanel  Grid.Column="1">
+            <Button Content="Сохранить" x:Name="SaveChangesButton" Click="SaveChangesButton_Click"/>
+            <Button Content="Назад" x:Name="BackButton" Click="BackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
